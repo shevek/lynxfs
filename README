@@ -1,0 +1,36 @@
+README for LynxFS driver
+
+More information at http://www.anarres.org/projects/lynxfs/
+
+What is it?
+
+A Lynx OS (http://www.lynuxworks.com/) filesystem driver. This driver
+mounts a LynxOS filesystem as a loopback. It is a bit lazily written,
+it loads the entire filesystem image into RAM and operates on the
+image in memory.
+
+Why is it?
+
+I don't really know. I had no particular reason for writing it. I
+have no use for it. I've never used LynxOS, and I don't plan to. I
+think I just did it just to prove that I could.
+
+Implementation notes:
+
+This filesystem driver was written using the excellent guide to
+filesystem design at
+	http://www.nobius.org/~dbg/practical-file-system-design.pdf
+which, although written with reference to the Be file system, describes
+enough of the BSD FFS structure to be applicable to LynxFS, which is
+nearly identical.
+
+I'm pretty sure the driver works fine. It's read-only. I could
+probably implement read-write support, but I don't think I would find
+it interesting. Patches welcome, of course. If it doesn't work for
+you, please email me, and I'll fix it, there are naturally a number
+of things I'm not too sure about.
+
+The driver was implemented entirely by intelligent guesswork.
+I don't have any way of creating LynxOS filesystems, so I can't do
+any extended testing. However, with all that, I'm pretty sure the
+code works, and will be fine.

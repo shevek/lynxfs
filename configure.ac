@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ(2.59)
-AC_INIT(lynxfs, 2.0.7, shevek@anarres.org)
+AC_INIT(lynxfs, 1.0.0, shevek@anarres.org)
 AC_CONFIG_AUX_DIR(config)
 AM_INIT_AUTOMAKE(lynxfs, $PACKAGE_VERSION)
 AC_CONFIG_SRCDIR([src/lynxfs.c])

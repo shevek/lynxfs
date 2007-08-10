@@ -1,6 +1,6 @@
 AUTOMAKE_OPTIONS = foreign
 
-EXTRA_DIST		= LICENSE README config win32
+EXTRA_DIST		= LICENSE README config
 
 SUBDIRS = src
 
